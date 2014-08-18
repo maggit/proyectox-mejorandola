@@ -49,7 +49,7 @@ gem 'devise', '3.2.4'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 #Workers
-gem 'sidekiq', '3.1.3'
+gem 'sidekiq'
 gem 'sinatra', '1.4.5', :require => nil
 
 #Newrelic

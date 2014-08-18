@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  require 'sidekiq/web'
   devise_for :admin
   authenticate :admin do
     mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-    #mount Sidekiq::Web => '/sidekiq'
+    mount Sidekiq::Web => '/sidekiq'
   end
   # end
   # The priority is based upon order of creation: first created -> highest priority.
