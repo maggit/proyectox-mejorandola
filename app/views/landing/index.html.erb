@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <h1>Launching Soon!</h1>
+  <p class="lead">Este proyecto será el mejor del mundo mundial. Sí deseas que te notifiquemos cuándo este listo el proyecto, por favor deja tus datos en la siguiente forma. Mejorando.la FTW!</p>
+
+    <%= form_tag('/waitinglist', :method => "post", :class => "form-inline") do -%>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="input-group">
+           <div class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></div>
+            <input type="city" name="city" class="form-control" id="city" placeholder="City">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+            <input name="email" class="form-control" type="email" placeholder="Enter email">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <input type="submit" class="btn btn-large btn-success" value="Be the first to know!">
+      </div>
+    </div>
+  <% end %>
+
+</div>
+
+<hr>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/mejorandola" data-widget-id="501132758974877696">#mejorandola Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div>

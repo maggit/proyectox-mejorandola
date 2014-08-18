@@ -5,6 +5,7 @@ gem 'rails', '4.1.4'
 # Use pg,sqlite3 as the database for Active Record
 gem 'pg', '0.17.0', group: :production,  group: :development
 gem 'sqlite3', group: :testing
+gem 'protected_attributes'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,6 +45,7 @@ gem 'therubyracer', '0.12.1'
 gem 'less-rails', '2.4.0'
 
 #Admin panel
+gem 'devise', '3.2.4'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 #Workers
