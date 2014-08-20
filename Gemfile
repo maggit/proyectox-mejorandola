@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use pg,sqlite3 as the database for Active Record
-gem 'pg', '0.17.0', group: :production,  group: :development
+gem 'pg', '0.17.0'
 #gem 'sqlite3', group: :testing
 gem 'protected_attributes'
 # Use SCSS for stylesheets
