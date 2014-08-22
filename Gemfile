@@ -57,7 +57,8 @@ gem 'newrelic_rpm', '3.8.1.221'
 
 #Email
 gem 'sendgrid', '1.2.0'
-
+gem 'faye'
+gem 'sanitize'
 group :development do
   gem "better_errors", '0.9.0'
   gem 'binding_of_caller', '0.7.2'
