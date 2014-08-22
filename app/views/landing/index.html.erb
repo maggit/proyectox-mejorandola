@@ -32,13 +32,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-5">
-      <form class="form">
+      <%= form_tag('/chat', :method => "post", :remote => true, :class => "form-inline") do -%>
         <div class="row">
           <div class="col-md-10">
             <div class="form-group">
               <div class="input-group">
                 <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-                <input type='text' class="form-control" id='chat_username' placeholder="Nickname"/>
+                <input name='username' type='text' class="form-control" id='chat_username' placeholder="Nickname"/>
               </div>
             </div>
           </div>
@@ -46,15 +46,15 @@
             <div class="form-group">
               <div class="input-group">
                 <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-                <textarea id='chat_message' class="form-control" rows="4" placeholder="Deja tu mensaje"></textarea>
+                <textarea name='message' id='chat_message' class="form-control" rows="4" placeholder="Deja tu mensaje"></textarea>
               </div>
             </div>
           </div>
           <div class="col-md-10">
-            <button type="button" id="send_chat_message" class="btn btn-large btn-success">Say something <i class="glyphicon glyphicon-send"></i></button>
+            <input type="submit" id="send_chat_message" class="btn btn-large btn-success" value="Say something">
           </div>
         </div>
-      </form>
+      <% end %>
     </div>
     <div class="col-md-7">
       <div class="panel panel-primary">
